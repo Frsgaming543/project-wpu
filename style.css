@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #f6f2ff !important;
+  color: #272932;
+}
+
+.navbar-brand {
+  color: rgb(20, 18, 18) !important;
+}
+
+.nav-item a {
+  font-size: 1.1rem;
+  margin-left: 15px;
+  color: rgb(21, 20, 20) !important;
+}
+
+.nav-item a:hover {
+  opacity: 0.5;
+}
+
+/* End */
+
+/* Jumbotron */
+
+.jumbotron {
+  margin-top: 100px;
+  height: 80vh;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+}
+
+.jumbotron h4,
+.jumbotron p {
+  color: rgb(167, 167, 167);
+}
+
+.jumbotron p {
+  font-size: 1.2rem;
+}
+
+/*.jumbotron .btn {
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.jumbotron .btn {
+    margin-left: 7px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.jumbotron .btn:hover {
+    background-color: rgb(107, 90, 210);
+    color: white;
+}*/
+
+.jumbotron img {
+  width: 350px;
+  margin-left: 250px;
+  margin-top: 15px;
+}
+
+.jumbotron ul {
+  display: flex;
+  margin-left: -35px;
+  list-style: none;
+  margin-top: 90px;
+}
+
+.jumbotron ul li {
+  margin-left: 15px;
+  font-size: 1.2rem;
+}
+
+/* end */
+
+/* About */
+.about {
+  margin-top: 50px;
+  padding: 150px 0;
+}
+
+.about .content {
+  margin-top: 80px;
+}
+
+.about img {
+  border: 5px solid black;
+  border-radius: 25px;
+}
+
+.about .project .point span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about .project {
+  padding: 0 50px;
+}
+
+.about .project .point p {
+  font-size: 12px;
+}
+
+.about .btn {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.about .btn:hover {
+  background-color: slateblue;
+  color: #fff;
+}
+
+.about .bi-download {
+  margin-left: 8px;
+}
+
+.modal-title,
+.modal-body {
+  color: black !important;
+}
+
+/* End */
+
+/* loader web wpu */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #6fb9c5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.loader-container.fade-out {
+  top: -120%;
+}
+
+@media only screen and (max-width: 550px) {
+  .loader-container img {
+    width: 50%;
+    height: 20%;
+  }
+
+  .jumbotron img {
+    margin-left: -10px;
+  }
+}
+
+.btn-facebook {
+  display: inline-block;
+  background: #3b5998; 
+  border-radius: 6px;
+}
+
+.btn-facebook:hover {
+  background: none;
+  border: 2px solid #3b5998;
+}
+
+.btn-twitter {
+  display: inline-block;
+  background: #55acee; 
+  border-radius: 6px;
+}
+
+.btn-twitter:hover {
+  background: none;
+  border: 2px solid #55acee;
+}
+
+.btn-google {
+  display: inline-block;
+  background: #dd4b39; 
+  border-radius: 6px;
+}
+
+.btn-google:hover {
+  background: none;
+  border: 2px solid #dd4b39;
+}
+
+.btn-instagram {
+  display: inline-block;
+  background: #ac2bac; 
+  border-radius: 6px;
+}
+
+.btn-instagram:hover {
+  background: none;
+  border: 2px solid #ac2bac;
+}
+
+.btn-linkedin {
+  display: inline-block;
+  background: #0082ca; 
+  border-radius: 6px;
+}
+
+.btn-linkedin:hover {
+  background: none;
+  border: 2px solid #0082ca;
+}
+
+.btn-github {
+  display: inline-block;
+  background: #444444; 
+  border-radius: 6px;
+}
+
+.btn-github:hover {
+  background: none;
+  border: 2px solid #444444;
+}
