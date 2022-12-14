@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
   margin: 0;
@@ -26,13 +33,25 @@ html {
   opacity: 0.5;
 }
 
-/* End */
+#navbarNav ul li a.active {
+  position: relative;
+}
+
+#navbarNav ul li a.active::after {
+  position: absolute;
+  content: "";
+  background-color: black;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+}
 
 /* Jumbotron */
 
 .jumbotron {
-  margin-top: 100px;
-  height: 80vh;
+  margin: 4em 0 0 0;
 }
 
 .jumbotron h1 {
@@ -47,22 +66,6 @@ html {
 .jumbotron p {
   font-size: 1.2rem;
 }
-
-/*.jumbotron .btn {
-    padding: 10px 10px;
-    border-radius: 10px;
-}
-
-.jumbotron .btn {
-    margin-left: 7px;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.jumbotron .btn:hover {
-    background-color: rgb(107, 90, 210);
-    color: white;
-}*/
 
 .jumbotron img {
   width: 350px;
@@ -82,89 +85,42 @@ html {
   font-size: 1.2rem;
 }
 
-/* end */
-
 /* About */
+
 .about {
-  margin-top: 50px;
-  padding: 150px 0;
+  margin: 5em 0 3em 0;
 }
 
-.about .content {
-  margin-top: 80px;
+/* Sandika Galih */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
 }
 
-.about img {
-  border: 5px solid black;
-  border-radius: 25px;
+.card h1 {
+  margin: .3em 0 0 0;
 }
 
-.about .project .point span {
-  font-size: 30px;
-  font-weight: bold;
+.title {
+  color: grey;
+  font-size: 18px;
 }
 
-.about .project {
-  padding: 0 50px;
+.title a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
 }
 
-.about .project .point p {
-  font-size: 12px;
-}
-
-.about .btn {
-  border: 2px solid black;
-  border-radius: 10px;
-}
-
-.about .btn:hover {
-  background-color: slateblue;
-  color: #fff;
-}
-
-.about .bi-download {
-  margin-left: 8px;
-}
-
-.modal-title,
-.modal-body {
-  color: black !important;
-}
-
-/* End */
-
-/* loader web wpu */
-.loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-  background: #6fb9c5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
-
-.loader-container.fade-out {
-  top: -120%;
-}
-
-@media only screen and (max-width: 550px) {
-  .loader-container img {
-    width: 50%;
-    height: 20%;
-  }
-
-  .jumbotron img {
-    margin-left: -10px;
-  }
-}
+/* Social Media */
 
 .btn-facebook {
   display: inline-block;
-  background: #3b5998; 
+  background: #3b5998;
   border-radius: 6px;
 }
 
@@ -175,7 +131,7 @@ html {
 
 .btn-twitter {
   display: inline-block;
-  background: #55acee; 
+  background: #55acee;
   border-radius: 6px;
 }
 
@@ -186,7 +142,7 @@ html {
 
 .btn-google {
   display: inline-block;
-  background: #dd4b39; 
+  background: #dd4b39;
   border-radius: 6px;
 }
 
@@ -197,7 +153,7 @@ html {
 
 .btn-instagram {
   display: inline-block;
-  background: #ac2bac; 
+  background: #ac2bac;
   border-radius: 6px;
 }
 
@@ -208,7 +164,7 @@ html {
 
 .btn-linkedin {
   display: inline-block;
-  background: #0082ca; 
+  background: #0082ca;
   border-radius: 6px;
 }
 
@@ -219,11 +175,32 @@ html {
 
 .btn-github {
   display: inline-block;
-  background: #444444; 
+  background: #444444;
   border-radius: 6px;
 }
 
 .btn-github:hover {
   background: none;
   border: 2px solid #444444;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 550px) {
+  /* Jumbotron */
+
+  .jumbotron img {
+    display: none;
+  }
+
+  .jumbotron img {
+    margin-left: -10px;
+  }
 }
